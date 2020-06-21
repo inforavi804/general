@@ -26,9 +26,9 @@ $image_color = imagecolorallocate($image, 255, 255, 255);
      
 imagepolygon($image, $valuesHexagon, 6, $image_color); 
 
-//imageellipse($image, 300, 250, 250, 250, $image_color);
+imageellipse($image, 300, 250, 250, 250, $image_color);
 
-//imagepolygon($image, $valuesSquare, 4, $image_color);
+imagepolygon($image, $valuesSquare, 4, $image_color);
 
 header('Content-type: image/png');      
 imagepng($image);
